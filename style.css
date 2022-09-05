@@ -1,4 +1,71 @@
 body{
-    text-align: center;
-    background-color: red;
+    margin: 0;
+    background-image: url(https://www.wallart.com/media/catalog/product/cache/5b18b93ddbe5d6592c6b175f41d24454/w/0/w05628-small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 200px;
 }
+
+header {
+    background-color: rgb(146, 175, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header img{
+    width: 150px;
+}
+
+header ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: x-large;
+    color: rgb(62, 49, 38);
+}
+
+header li:last-child {
+    margin: 0 10px 0 20px;
+}
+
+img{
+    float: left;
+    margin: 20px;
+    width: 300px;
+}
+
+main{
+    display: flex;
+    background-color: white;
+}
+
+article{
+    margin: 15px;
+    text-align: justify;
+}
+
+article nav{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(235, 221, 221);
+    background-color: rgb(146, 175, 40);
+    padding: 20px;
+}
+
+footer{
+    color: darkolivegreen;
+    text-align: center;
+}
+
