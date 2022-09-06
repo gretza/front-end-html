@@ -1,0 +1,48 @@
+html, body, main{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(152, 157, 224);
+}
+
+main{
+    max-width: 960px;
+    margin: 40px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card{
+    background-color: white;
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 10px;
+}
+
+h3{
+    margin: 0;
+}
+
+.card-text{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+main p{
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    gap: 10px;
+}
