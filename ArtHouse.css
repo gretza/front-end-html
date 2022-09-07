@@ -12,7 +12,9 @@ body{
     margin: 0 auto;
 }
 
-header div, footer, header{
+header div,
+footer,
+header{
     background-color: rgb(227, 174, 183);
 }
 
@@ -65,6 +67,10 @@ p{
     color: rgb(74, 64, 64);
 }
 
+.p2{
+    padding-bottom: 30px;
+}
+
 main article img{
     float: inline-end;
     width: 300px;
@@ -85,7 +91,8 @@ article ul li{
     color: rgb(74, 64, 64);
 }
 
-.lists{
+.lists,
+.stock-art{
     justify-content: space-between;
 }
 
@@ -97,7 +104,6 @@ article ul li{
 }
 
 .stock-art{
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
