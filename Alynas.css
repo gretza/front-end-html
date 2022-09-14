@@ -60,7 +60,7 @@ header nav ul li a{
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 200px;
-    height: 30vh;
+    height: 50vh;
 }
 
 h1{
@@ -70,6 +70,10 @@ h1{
 
 h2{
     color: brown; 
+}
+
+span{
+    color: rgb(113, 21, 21);
 }
 
 .products{
@@ -107,19 +111,19 @@ img {
 
 form{
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
-    width: calc(50% - 3px);
     height: 300px;
 }
 
 input,
 textarea {
     width: 100%;
-    margin: 5px;
+    margin-bottom: 10px;
 }
 
 button {
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px 30px;
     border: 1px solid brown;
     color: rgb(65, 57, 57);
@@ -133,11 +137,12 @@ button:hover{
 .contacts{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 iframe{
     margin-bottom: 20px;
-    width: calc(50% - 3px);
+    flex: 1;
 }
 
 footer {
