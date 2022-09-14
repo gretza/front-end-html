@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: brown;
+    color: white;
+}
+
+header img{
+    height: 40px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li:last-child a{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+header nav ul li a{
+    padding: 15px 5px;
+}
+
+.hero{
+    background-image: url(https://alynas.lt/wp-content/uploads/2020/03/Alynas-barai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 200px;
+    height: 30vh;
+}
+
+h1{
+    background-color: rgba(165, 42, 42, .7);
+    padding: 5px;
+}
+
+h2{
+    color: brown; 
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    width: calc(25% - 3px);
+    height: 300px;
+    background-color: brown;
+    object-fit: scale-down;
+    margin-bottom: 4px;
+}
+
+.product-card:not(:nth-child(4n)) {
+    margin-right: 4px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.product-card p{
+    color: white;
+    margin-left: 10px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(50% - 3px);
+    height: 300px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 30px;
+    border: 1px solid brown;
+    color: rgb(65, 57, 57);
+    background-color: white;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+iframe{
+    margin-bottom: 20px;
+    width: calc(50% - 3px);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: brown;
+    padding: 10px;
+}
