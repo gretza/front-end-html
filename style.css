@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background-color: rgb(7, 79, 44);
+}
+
+article{
+    padding: 0 15px;
+}
+
+section{
+    background-color: white;
+}
