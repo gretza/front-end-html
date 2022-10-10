@@ -32,17 +32,12 @@ body{
     height: 28px;
 }
 
-.header__image,
-.header__navigation{
-    grid-column: 2;
-}
-
 .header__image{
     width: 50px;
     object-fit: cover;
 }
 
-.header__navigation__list{
+.header__list{
     display: none;
 }
 
@@ -102,7 +97,7 @@ h2{
 }
 
 .form__button{
-    color: rgb(222, 202, 190);
+    color: white;
     border: none;
     padding: 10px 25px;
     margin: 10px;
@@ -110,7 +105,7 @@ h2{
 
 .footer{
     grid-area: footer;
-    color: rgb(222, 202, 190);
+    color: white;
 }
 
 .footer__layout{
@@ -129,7 +124,7 @@ h2{
 
 .footer__link{
     text-decoration: none;
-    color: rgb(222, 202, 190);
+    color: white;
 }
 
 @media screen and (min-width: 768px){
@@ -143,28 +138,42 @@ h2{
         ". layout .";
     }
 
+    .header{
+        height: 50px;
+    }
+
     .header__navigation{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "header__image header__navigation__list";
     }
 
     .header__image{
         grid-area: header__image;
+        width: 88px;
     }
 
-    .header__navigation__list{
-        display: flex;
+    .header__list{
+        /* display: flex;
+        justify-content: flex-end; */
+        align-items: center;
         grid-area: header__navigation__list;
         color: white;
-        justify-content: flex-end;
-        align-items: center;
+        
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: end;
+        gap: 20px;
     }
 
-    .header__navigation__item{
+    .header__item{
         list-style: none;
-        margin-left: 20px;
+    }
+
+    h1,
+    h2{
+        font-size: 26px;
     }
 
    .card-container{
@@ -175,12 +184,30 @@ h2{
         "card card card card";
     }
 
+    .card__title{
+        font-size: 22px;
+    }
+
+    .card__paragraph{
+        font-size: 18px;
+    }
+
     .form{
         width: 600px;
         margin: 0 auto;
     }
 
+    .form__button{
+        padding: 15px 60px;
+        margin: 20px;
+        font-size: 20px;
+    }
+
     .footer__layout{
-        
+        margin-top: 50px;
+        margin-bottom: 30px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "footer__paragraphs-section footer__links-section";
     }
 }
