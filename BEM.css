@@ -8,11 +8,28 @@ body{
     text-align: center;
 }
 
-.layout__inner-part{
+.header,
+.main__first-part,
+.main__second-part,
+.footer{
     display: grid;
     grid-template-columns: 5px auto 5px;
     grid-template-areas: 
-    ". header .";
+    ". layout .";
+}
+
+.header,
+.footer,
+.form__button{
+    background-color: rgb(21, 15, 10);
+}
+
+.layout{
+    grid-area: layout;
+}
+
+.header{
+    height: 28px;
 }
 
 .header__image,
@@ -20,18 +37,12 @@ body{
     grid-column: 2;
 }
 
-
-.header{
-    text-align: center;
-    background-color: rgb(21, 15, 10);
-}
-
 .header__image{
     width: 50px;
     object-fit: cover;
 }
 
-.header__navigation{
+.header__navigation__list{
     display: none;
 }
 
@@ -68,6 +79,108 @@ h2{
     font-weight: bold;
 }
 
+.form__input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.form__checkboxes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form__checkbox{
+    padding: 5px;
+    display: grid;
+}
+
+.form__label{
+    color: grey;
+}
+
+.form__button{
+    color: rgb(222, 202, 190);
+    border: none;
+    padding: 10px 25px;
+    margin: 10px;
+}
+
 .footer{
     grid-area: footer;
+    color: rgb(222, 202, 190);
+}
+
+.footer__layout{
+    display: grid;
+    text-align: left;
+}
+
+.footer__paragraph{
+    margin: 0px;
+}
+
+.footer__links-section{
+    display: grid;
+    padding-bottom: 20px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: rgb(222, 202, 190);
+}
+
+@media screen and (min-width: 768px){
+    .header,
+    .main__first-part,
+    .main__second-part,
+    .footer{
+        display: grid;
+        grid-template-columns: 250px auto 250px;
+        grid-template-areas: 
+        ". layout .";
+    }
+
+    .header__navigation{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "header__image header__navigation__list";
+    }
+
+    .header__image{
+        grid-area: header__image;
+    }
+
+    .header__navigation__list{
+        display: flex;
+        grid-area: header__navigation__list;
+        color: white;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header__navigation__item{
+        list-style: none;
+        margin-left: 20px;
+    }
+
+   .card-container{
+        display: grid;
+        grid-template-columns: 1ft 1ft 1ft 1fr;
+        gap: 30px;
+        grid-template-areas:
+        "card card card card";
+    }
+
+    .form{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .footer__layout{
+        
+    }
 }
