@@ -1,6 +1,11 @@
 @import "variables.scss";
 @import "cards.scss";
 @import "small-cards.scss";
+@import "edit.scss";
+
+*{
+    box-sizing: border-box;
+}
 
 html,
 body {

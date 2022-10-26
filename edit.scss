@@ -1,0 +1,91 @@
+main{
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "label-1 input-1"
+        "label-2 input-2"
+        "label-3 input-3";
+
+    .label-1 {
+        grid-area: label-1;
+    }
+
+    .label-2 {
+        grid-area: label-2;
+    }
+
+    .label-3 {
+        grid-area: label-3;
+    }
+
+    .input-1 {
+        grid-area: input-1;
+    }
+
+    .input-2 {
+        grid-area: input-2;
+        background-color: $cover-color;
+        border: 1px solid rgb(236, 235, 235);
+        border-radius: 5px;
+        padding: 5px;
+        width: 350px;
+    }
+
+    .input-3 {
+        grid-area: input-3;
+    }
+
+    .label-1,
+    .label-2,
+    .label-3,
+    .input-1,
+    .input-2 {
+        text-align: left;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .input-2 {
+        padding: 10px;
+    }
+
+    .input-3 {
+        width: 15px;
+        height: 15px;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.edit-button {
+    color: white;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.mistake-message {
+    text-transform: capitalize;
+    font-size: x-small;
+    text-align: center;
+    width: 510px;
+    margin: 10px auto;
+    color: brown;
+}
+
+button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 100px;
+    width: 300px;
+}
