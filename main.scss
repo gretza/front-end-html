@@ -1,20 +1,51 @@
-$border-radius: 10px;
+@import "variables.scss";
+@import "cards.scss";
+@import "small-cards.scss";
 
-// spalvos
-$primary-color: red;
-$secondary-color: blue;
-$special-color: green;
-
-
-h1 {
-    border: 1px solid red;
-    border-radius: $border-radius;
+html,
+body {
+    margin: $primary-margin;
+    font-family: sans-serif;
+    background-color: $cover-color;
 }
 
-.article {
-    border: solid;
+.header {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas:
+    ". wrapper .";
+    box-shadow: $shadow;
+    position: relative;
 
-    &__paragraph {
-    border-radius: $border-radius;
+
+    &__wrapper {
+        grid-area: wrapper;
+        display: flex;
+        justify-content: space-between;
+        justify-items: $main-position;
+        align-items: $main-position;
+    }
+
+    &__title-color {
+        color: $primary-color;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__list-item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    &__logo {
+        width: 15px;
+        height: 15px;
     }
 }

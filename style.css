@@ -1,13 +1,95 @@
-h1 {
-  border: 1px solid red;
-  border-radius: 10px;
+.form {
+  background-color: white;
+  width: 600px;
+  text-align: center;
+  box-shadow: 0px 5px 10px -5px rgba(37, 37, 37, 0.7);
+  margin: 20px auto;
+  padding: 50px;
+}
+.form__title {
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+.form__inputs {
+  display: flex;
+  justify-content: center;
+}
+.form__add-field {
+  background-color: rgb(247, 250, 251);
+  border: 1px solid rgb(236, 235, 235);
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+  width: 400px;
+}
+.form__button {
+  background-color: rgb(110, 86, 231);
+  width: 100px;
+  border: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+.form__mistake-message {
+  text-transform: capitalize;
+  font-size: x-small;
+  text-align: left;
+  width: 510px;
+  margin: 10px auto;
+  color: brown;
 }
 
-.article {
-  border: solid;
+.first-card {
+  margin: 80px auto;
 }
-.article__paragraph {
-  border-radius: 10px;
+
+.form__icon {
+  width: 10px;
+  height: 10px;
+}
+
+.second-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(247, 250, 251);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". wrapper .";
+  box-shadow: 0px 5px 10px -5px rgba(37, 37, 37, 0.7);
+  position: relative;
+}
+.header__wrapper {
+  grid-area: wrapper;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.header__title-color {
+  color: rgb(110, 86, 231);
+}
+.header__list {
+  display: flex;
+  gap: 20px;
+}
+.header__list-item {
+  list-style: none;
+}
+.header__link {
+  text-decoration: none;
+  color: rgb(110, 86, 231);
+}
+.header__logo {
+  width: 15px;
+  height: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
